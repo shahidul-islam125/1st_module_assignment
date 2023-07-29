@@ -12,14 +12,14 @@ function calculateDiscount(purchaseAmount){
         console.log("No discount is applied")
     }else if(purchaseAmount >= 50 && purchaseAmount <= 100){
         discountedAmount = purchaseAmount * (5/100)
-        console.log(`the discounted amount is $${discountedAmount} & total amount $${purchaseAmount} + $${discountedAmount}`)
+        console.log(`the discounted amount is $${discountedAmount} & total amount $${purchaseAmount + discountedAmount}`)
 
     }else if(purchaseAmount >= 100 && purchaseAmount <= 200){
         discountedAmount = purchaseAmount * (10/100)
-        console.log(`the discounted amount is $${discountedAmount} & total amount $${purchaseAmount} + $${discountedAmount}`)
+        console.log(`the discounted amount is $${discountedAmount} & total amount $${purchaseAmount + discountedAmount}`)
     }else{
         discountedAmount = purchaseAmount * (15/100)
-        console.log(`the discounted amount is $${discountedAmount} & total amount $${purchaseAmount} + $${discountedAmount}`)
+        console.log(`the discounted amount is $${discountedAmount} & total amount $${purchaseAmount + discountedAmount}`)
     }
 }
 calculateDiscount(100)
